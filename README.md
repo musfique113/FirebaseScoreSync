@@ -1,16 +1,19 @@
-# livescore_firebase
+# Implementing Firebase in Flutter Project
 
-Firebase practice
 
-## Getting Started
+### 1. Create a Firebase Project
 
-This project is a starting point for a Flutter application.
+- Go to the [Firebase Console](https://console.firebase.google.com/).
+- Click on "Add project" to create a new project.
+- Follow the instructions to set up your project.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Configure Flutter Project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Open your Flutter project.
+- In your `pubspec.yaml` file, add the `firebase_core` dependency:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  ```yaml
+  dependencies:
+    flutter:
+      sdk: flutter
+    firebase_core: ^1.10.0
