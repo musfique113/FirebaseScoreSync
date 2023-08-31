@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_core: ^2.15.1
-  flutter_lints: ^2.0.0
   cloud_firestore: ^4.8.5
   get:
 
