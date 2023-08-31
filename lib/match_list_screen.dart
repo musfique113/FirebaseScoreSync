@@ -19,6 +19,7 @@ class MatchList extends StatelessWidget {
         }
 
         var matches = snapshot.data!.docs;
+
         return ListView.builder(
           itemCount: matches.length,
           itemBuilder: (context, index) {
@@ -37,7 +38,10 @@ class MatchList extends StatelessWidget {
                 ),
                 trailing: const Icon(Icons.arrow_forward), // Add a trailing arrow icon
                 onTap: () {
-                  Get.to(MatchDetails(match: match));
+                  Get.to(() => MatchDetail(
+                    matchDocumentId: matches[index].id,
+                    match: match['match_name'],
+                  ));
                 },
               ),
             );
